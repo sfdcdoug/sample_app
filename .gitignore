@@ -18,4 +18,5 @@
 
 # Ignore RubyMine crap
 /.idea
-/.idea/*
+
+/spring
