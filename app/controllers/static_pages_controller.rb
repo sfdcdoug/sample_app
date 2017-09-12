@@ -6,6 +6,7 @@ self.request.env.each do |header|
   logger.warn "HEADER VAL: #{header[1]}"
 end
 logger.warn "*** END RAW REQUEST HEADERS ***"
+logger.warn 'X-Forwarded-Proto: ' + self.request.env['HTTP_X_FORWARDED_PROTO']
   end
 
   def help
